@@ -5,3 +5,4 @@
 	A indentação é crucial em Python, pois determina a estrutura hieráquica do código. ou seja,
 	um bloco de código devidamente identificado proporciona maior clareza e facilita a leitura,
 	o que é essencial para a eficiência do desevolvimento e matunentação do software:
+	> Organização: Os blocos de código ajuda a organizar o seu pensamento!
