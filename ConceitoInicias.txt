@@ -1,0 +1,7 @@
+									Blocos de Códigos
+	
+	Os blocos de código em Python são conjuntos de intruções que são agrupadas em uma unidade lógica. 
+	Eles podem ser repreesentados por funções, classes ou até mesmo loops e estruturas condicionais que organizam a execução do programa.
+	A indentação é crucial em Python, pois determina a estrutura hieráquica do código. ou seja,
+	um bloco de código devidamente identificado proporciona maior clareza e facilita a leitura,
+	o que é essencial para a eficiência do desevolvimento e matunentação do software:
