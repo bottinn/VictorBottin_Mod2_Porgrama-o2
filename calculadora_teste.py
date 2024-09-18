@@ -39,7 +39,7 @@ elif escolha == 3 :
 elif escolha == 4 :
         print('O resultado da divisão entre {num1} e {num2} é: ', operação.divisão())
 elif escolha == 5 :
-        print('O resultado da exponenciação entre {num1} e {num2} é: ', operação.exponenciação())
+        print('O resultado da expoznenciação entre {num1} e {num2} é: ', operação.exponenciação())
 elif escolha == 6 :
         print('O resultado da divisão inteira entre {num1} e {num2} é: ', operação.divisão_interia())
 elif escolha == 7 :

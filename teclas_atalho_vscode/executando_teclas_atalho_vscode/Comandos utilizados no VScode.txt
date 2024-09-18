@@ -1,0 +1,26 @@
+1 - ctrl + space = esse comando te recomenda o que escrever no código.
+Ex: "pint", depois de usar esse comando ele irá te sugerir o correto
+    "print".
+2 - ctrl + X = corta a linha, deleta a linha selecionada.
+Ex: print('o mundo é legal') 
+	ctrl + X
+    *linha é deletada*
+
+3 - ctrl + F4 = fecha o editor selecionado.
+Ex: "calculadora" ctrl + F4
+    "calculadora" fecha
+
+4 -  F11 = coloca a tela cheia, retirando a barra de tarefas do monitor.
+
+5 - F2 = Renomeia os simbolos que possuem o mesmo significado.
+
+6 - F8 = te mostra os erros encontrados no código, toda vez que voçê aperta ele,
+	ele te mostrara o proximo erro no código.
+
+7 - ctrl + K M = muda a linguagem do arquivo.
+
+8 - ctrl + ' = abre o terminal do arquivo.
+
+9 - ctrl + u = refaz o ultimo caracter selecionado pelo mouse.
+
+10 - ctrl + mostra o explorador do VScode. 
