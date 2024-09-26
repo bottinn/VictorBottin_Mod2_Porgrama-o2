@@ -21,7 +21,13 @@
 
 #3
 
-Frase = "Bem vindo turma da Programação II ao mundo da programação Python!!!" [:: - 1]
+#Frase = "Bem vindo turma da Programação II ao mundo da programação Python!!!" [:: - 1]
 #print(Frase)
 
 #4
+
+import random
+TamannhoSenhaGerada = int(input("Informe o tamanho da senha: "))
+uuid_gerador_senha = "9aed7be2-8905-4c7f-b1da-de9d9979b908" "86fa9665-46e7-4f45-a90f-a0b81105071d" "b5440c24-c6b0-42fb-9105-96497a8ca076"
+senha_gerada = " ".join(random.sample(uuid_gerador_senha, TamannhoSenhaGerada))
+print(f"Senha gerada com {TamannhoSenhaGerada} caracteres {senha_gerada}")
