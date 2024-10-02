@@ -1,0 +1,30 @@
+		Conceitos teóricos importantes sobre Estruturas Condicionais 
+
+	- Operadores relacionais; 
+	- Operadores lógicos;
+	- Expressões lógicas;
+	- Operadores Aritméticos;
+	- Precedência de operadores;
+	- Sintaxe\semântica da linguagem de programação.
+
+	Exercícios
+	Determine os resultados obtidos na avaliação das expressões lógicas seguintes,
+	sabendo que A, B ,C contêm, respectivamente: 2, 7, 3,5, e que existe uma variável
+	lógica L cujo valor é falso (f):
+	
+	a) B = A*C e (L ou V)
+	   7 = 2*3,5 
+	R: Verdadeiro
+
+	b)B > A ou B = pot (A,A)
+	  7 > 2 ou 7 = 2²
+	
+	
+	c) L e B div A >= C ou não A <= C
+	
+	
+ 	d) não L ou V e rad (A + B) >= C
+
+	e) B/A = C ou B/A <> C
+
+	f) L ou pot (B,A) <= C * 10 + A * B 
