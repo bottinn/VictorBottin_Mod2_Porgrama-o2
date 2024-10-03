@@ -9,22 +9,43 @@
 
 	Exercícios
 	Determine os resultados obtidos na avaliação das expressões lógicas seguintes,
-	sabendo que A, B ,C contêm, respectivamente: 2, 7, 3,5, e que existe uma variável
+	sabendo que A, B ,C contêm, respectivamente: 2, 7, 3,5 , e que existe uma variável
 	lógica L cujo valor é falso (f):
 	
 	a) B = A*C e (L ou V)
 	   7 = 2*3,5 
-	R: Verdadeiro
+	   3,5 * 2 = 7
+	       V 
 
 	b)B > A ou B = pot (A,A)
 	  7 > 2 ou 7 = 2²
-	
+	  7 > 2 ou 7 = 4 
+	    V   ou    F
+		 V
 	
 	c) L e B div A >= C ou não A <= C
-	
-	
- 	d) não L ou V e rad (A + B) >= C
+ 	   F e 7 / 2   >= 3,5 ou não 2 <= 3,5 
+	     F e 3,5 >= 3,5 ou não 2 <= 3,5 
+		F e V ou F
+		    F ou F			
+		       F
 
-	e) B/A = C ou B/A <> C
+ 	d) não L ou V e rad (A + B) >= C
+	   não F ou V e rad(9) >= C 
+	   não F ou V e 3 >= 3,5
+	      V  ou V e 3 >= 3,5
+	          V   ou   V 
+		       V 
+	
+	
+	e) B / A = C ou B/A <> C
+	   7 / 2 = 3,5 ou 7 / 2 <> 3,5 
+	    3,5 = 3,5 ou 3,5 <> 3,5 
+		V    ou     F
+		      V	
 
 	f) L ou pot (B,A) <= C * 10 + A * B 
+	   F ou 7² <= 3,5 * 10 + 2 * 7
+		49 <= 35 + 14 
+		49 == 49 
+	            V
