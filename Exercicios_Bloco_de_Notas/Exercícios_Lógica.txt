@@ -34,8 +34,8 @@
 	   não F ou V e rad(9) >= C 
 	   não F ou V e 3 >= 3,5
 	      V  ou V e 3 >= 3,5
-	          V   ou   V 
-		       V 
+	          V    e   F 
+		       F 
 	
 	
 	e) B / A = C ou B/A <> C
