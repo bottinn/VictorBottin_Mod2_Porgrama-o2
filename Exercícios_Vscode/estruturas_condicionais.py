@@ -6,8 +6,8 @@
 #ambas as mensagens.
 
 print("por favor insira o primeiro valor maior que o segundo!")
-numero1 = int(input("Insira um númeor inteiro:  "))
-numero2 = int(input("Insira um númeor inteiro:  "))
+numero1 = int(input("Insira um número inteiro:  "))
+numero2 = int(input("Insira um número inteiro:  "))
 if numero1 > numero2: 
     print(f"O valor {numero1} é maior que o número {numero2}")
 else :
@@ -50,7 +50,7 @@ posicao = frase.find("palavraescolhida")
 if  posicao != -1:
     print(f"a palavra ({palavraescolhida}) está na frase.")
 else:
-    print(f"a palavra({palavraescolhida})não está na frase.")
+    print(f"a palavra ({palavraescolhida}) não está na frase.")
 
 #4) Crie um programa que leia um número e verifique se ele é par ou ímpar
 
