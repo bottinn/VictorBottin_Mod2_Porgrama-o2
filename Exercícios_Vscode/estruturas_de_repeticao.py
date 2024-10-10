@@ -3,14 +3,14 @@
 #valor dessa variável. Explique em um comentário como o controle do laço vai
 #funcionar.
 
-#ValorIncial = 100
-#while True:
-#    ValorEscolhido = int(input("Escolha um número:  "))
-#    if (ValorEscolhido <= ValorIncial):
-#        print("O valor escolhido não é aceitavel")
-#    else :    
-#        print("O valor escolhido é finalmente aceito")
-#        break
+ValorIncial = 100
+while True:
+    ValorEscolhido = int(input("Escolha um número:  "))
+    if (ValorEscolhido <= ValorIncial):
+        print("O valor escolhido não é aceitavel")
+    else :    
+        print("O valor escolhido é finalmente aceito")
+        break
 
 
 #2)Escreva um programa que gera um número aleatório entre 0 a 10, salvando
@@ -24,19 +24,19 @@
 
 #import random 
 #NumeroAleatorio = random.randint(0,10)
-#CincoTentativa = 5
-#TentativaJogadas = 0
-#while CincoTentativa > TentativaJogadas:
-#    Chute = int(input(f"Seu chute (tentativa {TentativaJogadas}):   "))
-#    CincoTentativa = CincoTentativa - 1
-#    if Chute == NumeroAleatorio:
-#        print(f"Parabéns! Você acetou o número secreto {NumeroAleatorio}")
-#        break
-#    else: 
-#        print("Errado! Tente novamente.")
-#        TentativaJogadas + 1 == CincoTentativa
-#    if CincoTentativa == TentativaJogadas:
-#        print(f"Infelizmente você usou todas as suas chances. O número secreto era {NumeroAleatorio}")
+CincoTentativa = 5
+TentativaJogadas = 0
+while CincoTentativa > TentativaJogadas:
+    Chute = int(input(f"Seu chute (tentativa {TentativaJogadas}):   "))
+    CincoTentativa = CincoTentativa - 1
+    if Chute == NumeroAleatorio:
+        print(f"Parabéns! Você acetou o número secreto {NumeroAleatorio}")
+        break
+    else: 
+        print("Errado! Tente novamente.")
+        TentativaJogadas + 1 == CincoTentativa
+    if CincoTentativa == TentativaJogadas:
+        print(f"Infelizmente você usou todas as suas chances. O número secreto era {NumeroAleatorio}")
 
 #3) Escreva um programa que verifica se um endereço URL de um site foi digitado
 #levando-se em conta o prefixo “www.” e o sufixo “.com.br”. Se o endereço foi
@@ -57,27 +57,3 @@ while True:
         break
     else:
         print(f"Insira novamente o URL, {site}")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
