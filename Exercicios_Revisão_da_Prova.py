@@ -3,7 +3,7 @@
 PrimeiroNumeroEscolhido = int(input("Escolha um número: "))
 SegundoNumeroEscolhido = int(input("Escolha um número:  "))
 print(f"O primeiro número escolhido é {PrimeiroNumeroEscolhido}")
-print(f"O primeiro número escolhido é {SegundoNumeroEscolhido}")
+print(f"O segundo número escolhido é {SegundoNumeroEscolhido}")
 
 #2. Faça um programa que leia um número e informe se ele é positivo, negativo ou zero.
 Numero_Positovo_Negativo_Zero = int(input("Insira um número:    "))
@@ -27,8 +27,20 @@ Numero_resolvido = Numero_quadrado * Numero_quadrado
 print(f"O quadrado desse número é:  {Numero_resolvido}")
 
 #5. Escreva um programa que verifique se um número é par ou ímpar.
+Numero_par_impar = int(input("Insira um número:     "))
+if Numero_par_impar % 2 == 0:
+    print("O número é par!")
+else:
+    print("O número é impar!")
+
 #6. Crie um programa que peça a idade do usuário e exiba se ele é maior de idade ou
 #não.
+IdadeMaior = int(input("insira a sua idade: "))
+if IdadeMaior >= 18:
+    print("Você é maior de idade!")
+else:
+    print("Você é menor de idade!")
+
 #7. Escreva um programa que calcule a média aritmética de três números fornecidos
 #pelo usuário.
 #8. Faça um programa que leia um valor e informe se ele está entre 10 e 20.
