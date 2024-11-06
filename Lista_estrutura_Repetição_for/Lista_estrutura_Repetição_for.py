@@ -53,7 +53,6 @@ else:
 #7) Crie um programa que pede que o usuário digite um nome ou uma frase,
 #verifique se esse conteúdo digitado é um palíndromo ou não, exibindo em
 #tela esse resultado.
-# Solicita ao usuário que digite um nome ou uma frase
 entrada = input("Digite um nome ou uma frase: ")
 entrada_processada = entrada.replace(" ", "").lower()
 if entrada_processada == entrada_processada[::-1]:
