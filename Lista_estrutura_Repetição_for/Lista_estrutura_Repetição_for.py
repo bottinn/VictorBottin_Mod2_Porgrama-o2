@@ -64,7 +64,18 @@ for i in entrada_processada:
 #8) Crie uma função de número de parâmetros indefinido, que realize a soma
 #dos números passados como parâmetro, independentemente da
 #quantidade de parâmetros.
+def soma(*args):
+    return sum(args)
+print("Função de parâmetros:    ")
+print(soma(1, 2, 3))  
+print(soma(10, 20, 30, 40))  
+print(soma(5, 5)) 
 
 #9) Escreva um programa que lê uma palavra ou frase digitada pelo usuário,
 #retornando o número de letras maiúsculas e minúsculas da mesma. Usar
 #apenas de logica e de funções embutidas ao sistema.
+FraseDigitadaParaContadorDeLetras = str(input("Insira Uma frase ou palavra: "))
+LetrasMaiusculas = sum(1 for letra in FraseDigitadaParaContadorDeLetras if letra.isupper())
+LetrasMinusculas = sum(1 for letra in FraseDigitadaParaContadorDeLetras if letra.islower())
+print(f"O número de Letras maisculas é de {LetrasMaiusculas}")
+print(f"O número de Letras minusculas é de {LetrasMinusculas}")
