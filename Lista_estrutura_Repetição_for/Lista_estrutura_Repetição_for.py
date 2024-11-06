@@ -40,12 +40,32 @@ print(f"Soma dos números ímpares: {soma}")
 #6) Crie um programa que pede ao usuário que digite um número qualquer,
 #em seguida retorne se esse número é primo ou não, caso não, retorne
 #também quantas vezes esse número é divisível.
+numero_primo = int(input("Digite um número: "))
+divisores_primo = 0
+for i in range(1, numero_primo + 1):
+    if numero_primo % i == 0:
+        divisores_primo += 1
+if divisores_primo == 2:
+    print(f"O número {numero_primo} é primo.")
+else:
+    print(f"O número {numero_primo} não é primo e é divisível {divisores_primo} vezes.")
+
 #7) Crie um programa que pede que o usuário digite um nome ou uma frase,
 #verifique se esse conteúdo digitado é um palíndromo ou não, exibindo em
 #tela esse resultado.
+# Solicita ao usuário que digite um nome ou uma frase
+entrada = input("Digite um nome ou uma frase: ")
+entrada_processada = entrada.replace(" ", "").lower()
+if entrada_processada == entrada_processada[::-1]:
+    print(f'"{entrada}" é um palíndromo.')
+else:
+    print(f'"{entrada}" não é um palíndromo.')
+for i in entrada_processada:
+    print(f"{i}")
 #8) Crie uma função de número de parâmetros indefinido, que realize a soma
 #dos números passados como parâmetro, independentemente da
 #quantidade de parâmetros.
+
 #9) Escreva um programa que lê uma palavra ou frase digitada pelo usuário,
 #retornando o número de letras maiúsculas e minúsculas da mesma. Usar
 #apenas de logica e de funções embutidas ao sistema.
