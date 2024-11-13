@@ -39,6 +39,14 @@ print(f"A letra escolhida foi {PosicaoEspecifica(FraseParaSaberPosicao, PosicaoD
 # 3. Crie uma função que itere sobre uma String, através de um laço de repetição,
 # passada como parâmetro e exiba o caracter e a posição que esse caracter aparece
 # na String. Por exemplo: Z - 8º caracter da String “string passada como parâmetro”
+def IterarString(StringUsuario, Contador):
+    for i in StringUsuario:
+        print(f"{i.capitalize()} - {Contador}º caracter de string {StringUsuario}")
+        Contador = contador + 1
+StringUsuario = input("Por favor, insira a String que gostaria que fosse Iterada:   \n")
+contador = 1
+IterarString(StringUsuario, Contador)
+
 # 4. Crie uma função que retorne verdadeiro ou falso quando avalia se uma frase termina
 # com determinada palavra ou letra. A frase deverá ser passada através de uma
 # variável, criada e inicializada previamente, enquanto que a palavra ou letra deve ser
@@ -48,6 +56,9 @@ print(f"A letra escolhida foi {PosicaoEspecifica(FraseParaSaberPosicao, PosicaoD
 # mensagem: [A frase passada por parâmetro] NÃO termina com [palavra ou letra
 # passada por parâmetro]. Para efeito de testes, inicialize a variável criada com uma
 # das estrofes do hino nacional brasileiro.
+
+
+
 # 5. Crie uma função que implemente a questão 1 da avaliação01 teórico-prática.
 # 6. Crie uma função que implemente a questão 4 da avaliação01 teórico-prática.
 # 7. Crie uma função que receba uma String, toda em letras minúsculas, e retorne essa
