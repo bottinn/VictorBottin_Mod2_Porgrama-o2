@@ -25,15 +25,14 @@ print(f"A musica {NomeMusica} tem {CalcularTamanhoMusicaString(letraMusica)} car
 # mensagem “Índice fora do intervalo". A String não possui o índice {índice passado
 # como parâmetro}”. Execute os testes na função tal que o primeiro caracter possa ser
 # retornado, o último, um do meio da String, etc…
-StringAtividade2 = str(input("Insira uma palavra ou frase:  \n"))
-PosicaoAtividade2 = int(input("Insira o Número da casa que queira saber:    \n"))
-def PosicaoEscolhidaNumeroAtividade2(StringAtividade2,PosicaoAtividade2):
-    if PosicaoAtividade2 == -1:
-        return -1
-    elif CasaEscolhida == PosicaoAtividade2:
-        CasaEscolhida = PosicaoAtividade2        
-
-
+StringFrase = str(input("Insira uma frase:  \n"))
+PosicaoString = int(input("INforme a posição da letra que quer: \n"))
+def  LocalizarCaracter(StringFrase, PosicaoString):
+    try:
+        print(f"A letra de index {PosicaoString} é {StringFrase[PosicaoString - 1]}")
+    except IndexError():
+        print("Indice fora do alcance!")
+LocalizarCaracter(StringFrase, PosicaoString)
 
 # 3. Crie uma função que itere sobre uma String, através de um laço de repetição,
 # passada como parâmetro e exiba o caracter e a posição que esse caracter aparece
@@ -54,12 +53,32 @@ exibir_caracteres_com_posicao(FraseAtividade3)
 # mensagem: [A frase passada por parâmetro] NÃO termina com [palavra ou letra
 # passada por parâmetro]. Para efeito de testes, inicialize a variável criada com uma
 # das estrofes do hino nacional brasileiro.
-
-
+FraseParaTerminar = str(input("Informe uma palavra ou frase para verificar se termina com alguma letra/palavra:    \n "))
+FraseOuPalavraParaVerificar = input("Insira uma palavra ou letra para ver se ela está presente no final da palavra:  \n")
+def FuncaoVerdadeiroFalso(FraseParaTerminar,FraseOuPalavraParaVerificar):
+    if (FraseParaTerminar.endswith(FraseOuPalavraParaVerificar)):
+        print(f"{FraseParaTerminar} Termina com {FraseOuPalavraParaVerificar}!")
+    else:
+        print(f"{FraseParaTerminar} Não Termina com {FraseOuPalavraParaVerificar}!")
+(FuncaoVerdadeiroFalso(FraseParaTerminar, FraseOuPalavraParaVerificar))
 
 # 5. Crie uma função que implemente a questão 1 da avaliação01 teórico-prática.
-# 6. Crie uma função que implemente a questão 4 da avaliação01 teórico-prática.
 
+
+
+# 6. Crie uma função que implemente a questão 4 da avaliação01 teórico-prática.
+CaracteresMinimo = 6
+CaracteresMaximo = 20
+LetraMinuscula = SenhaParaSerFeita
+CaracteresEspecial = r"!@#$%&*?<>:}{[]"
+
+
+SenhaParaSerFeita = input("Insira a senha que deseja criar, ela deve ter no mínimo 6 carácteres, e no maximo 6, \numa letra maiuscula e miscula, com um caracter especial (#@$%):   \n")
+def RequisitosSenha(CarateresMinimo,CaracteresMaximo,LetraMinuscula,LetraMaiscula,CaracterEspecial):
+    if SenhaParaSerFeita >= CaracteresMinimo and SenhaParaSerFeita <= CaracteresMaximo:
+        print()
+
+print(CaracteresEspecial)
 
 # 7. Crie uma função que receba uma String, toda em letras minúsculas, e retorne essa
 # mesma String passada como parâmetro com a primeira letra de cada palavra em
