@@ -9,7 +9,7 @@ for i in FraseIFSC:
     print(f"{i}")
 print("Frase de forma Horizontal:")
 for i in FraseIFSC:
-    print(f"{i}", end="")
+    print(f"{i}", end="o")
 print("\n")
 #2) Crie um programa que realiza a contagem de 0 a 20, exibindo apenas os
 #números pares.

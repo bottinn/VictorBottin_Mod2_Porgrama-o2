@@ -15,6 +15,7 @@ def CalcularTamanhoMusicaString(letraMusica):
     else:
         return TamanhoString
 print(f"A musica {NomeMusica} tem {CalcularTamanhoMusicaString(letraMusica)} caractéres.")
+
 # 2. Crie uma função que retorne um caracter de uma String em uma posição específica.
 # Para tanto, dois argumentos de entrada deverão ser fornecidos: a string e a posição
 # que se deseja ter um carácter retornado. O controle sobre a posição (índice)
@@ -24,28 +25,26 @@ print(f"A musica {NomeMusica} tem {CalcularTamanhoMusicaString(letraMusica)} car
 # mensagem “Índice fora do intervalo". A String não possui o índice {índice passado
 # como parâmetro}”. Execute os testes na função tal que o primeiro caracter possa ser
 # retornado, o último, um do meio da String, etc…
-FraseParaSaberPosicao = input("Escreva uma frase ou palavra: \n")
-PosicaoDaLetra = int(input("Qual a posição da letra que gostaria de saber:  \n"))
-def PosicaoEspecifica(FraseParaSaberPosicao,PosicaoDaLetra):
-    if  FraseParaSaberPosicao:
-        print()
-    else:
-        (PosicaoDaLetra == [1 - 100])
-        return FraseParaSaberPosicao
-print(f"A letra escolhida foi {PosicaoEspecifica(FraseParaSaberPosicao, PosicaoDaLetra)}")
+StringAtividade2 = str(input("Insira uma palavra ou frase:  \n"))
+PosicaoAtividade2 = int(input("Insira o Número da casa que queira saber:    \n"))
+def PosicaoEscolhidaNumeroAtividade2(StringAtividade2,PosicaoAtividade2):
+    if PosicaoAtividade2 == -1:
+        return -1
+    elif PosicaoAtividade2 == [1-100]:
+        return (PosicaoAtividade2)
+CasaEscolhida = PosicaoAtividade2        
 
 
 
 # 3. Crie uma função que itere sobre uma String, através de um laço de repetição,
 # passada como parâmetro e exiba o caracter e a posição que esse caracter aparece
 # na String. Por exemplo: Z - 8º caracter da String “string passada como parâmetro”
-def IterarString(StringUsuario, Contador):
-    for i in StringUsuario:
-        print(f"{i.capitalize()} - {Contador}º caracter de string {StringUsuario}")
-        Contador = contador + 1
-StringUsuario = input("Por favor, insira a String que gostaria que fosse Iterada:   \n")
-contador = 1
-IterarString(StringUsuario, Contador)
+def exibir_caracteres_com_posicao(StringCaracterPosicao):
+    # Itera sobre a string e exibe o caractere e sua posição
+    for i, CaracterEscolhido in enumerate(StringCaracterPosicao):
+        print(f"{CaracterEscolhido} - {i + 1}º caracter da string")
+FraseAtividade3 = input("Digite uma Frase: ")
+exibir_caracteres_com_posicao(FraseAtividade3)
 
 # 4. Crie uma função que retorne verdadeiro ou falso quando avalia se uma frase termina
 # com determinada palavra ou letra. A frase deverá ser passada através de uma
@@ -61,11 +60,27 @@ IterarString(StringUsuario, Contador)
 
 # 5. Crie uma função que implemente a questão 1 da avaliação01 teórico-prática.
 # 6. Crie uma função que implemente a questão 4 da avaliação01 teórico-prática.
+
+
 # 7. Crie uma função que receba uma String, toda em letras minúsculas, e retorne essa
 # mesma String passada como parâmetro com a primeira letra de cada palavra em
 # maiuscula. O desenvolvedor deve garantir que a String esteja em letras minúsculas.
 # Como forma de testes, o seu nome completo pode ser passado como parâmetro
 # dessa função.
+def string_para_palavras_minusculas(StringMaiuscula):
+    StringMaiuscula = StringMaiuscula.lower()
+    return StringMaiuscula.title()
+palavraStringParaDeixarmaiuscula = str(input("Insira o seu nome completo em letras minusculas: \n"))
+ResultadoJamaiusculo = string_para_palavras_minusculas(palavraStringParaDeixarmaiuscula)
+print(f"{palavraStringParaDeixarmaiuscula.title()}")
+
+
 # 8. Crie uma função que receba uma String e um caracter imprimível. Essa função
 # deverá retornar a String passada por parâmetro com o caracter dentro da string, por
 # exemplo “Python” -> “P*y*t*h*o*n”.
+TextoString = str(input("Insira uma palavra ou texto:   \n"))
+CaracterSelecionado = input("Insira um caracter para ser colocado entre as letras:  \n")
+def inserir_caractere_na_string(TextoString, CaracterSelecionado):
+    return CaracterSelecionado.join(TextoString)
+resultado = inserir_caractere_na_string(f"{TextoString}", f"{CaracterSelecionado}")
+print(resultado) 
