@@ -30,9 +30,8 @@ PosicaoAtividade2 = int(input("Insira o Número da casa que queira saber:    \n"
 def PosicaoEscolhidaNumeroAtividade2(StringAtividade2,PosicaoAtividade2):
     if PosicaoAtividade2 == -1:
         return -1
-    elif PosicaoAtividade2 == [1-100]:
-        return (PosicaoAtividade2)
-CasaEscolhida = PosicaoAtividade2        
+    elif CasaEscolhida == PosicaoAtividade2:
+        CasaEscolhida = PosicaoAtividade2        
 
 
 
