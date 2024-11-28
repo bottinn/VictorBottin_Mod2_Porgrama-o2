@@ -15,6 +15,20 @@ print(DataeHoraAtual)
 '''Obtenha a data atual (dia, mês, ano) e mostre na tela'''
 Hoje = datetime.today()
 print(Hoje)
-#Exercício 3 
-import time
-HorarioEspecifico = time(14, 30, 59)
+#Exercício 3
+from datetime import datetime, date, time, timedelta
+agora = datetime.now()
+DataFormada = agora.strftime("%d/%m/%Y")
+HoraFormada = agora.strftime("%H:%M:%S")
+print(DataFormada)
+print(HoraFormada)
+
+from datetime import datetime
+import locale
+
+locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8') 
+DataAgoraNoPaisQueFoiLocalizadoLocale = datetime.now()
+Data_Formada = DataAgoraNoPaisQueFoiLocalizadoLocale.strftime("%x")
+Hora_formada = DataAgoraNoPaisQueFoiLocalizadoLocale.strftime("%X")
+print("Data Formada:", Data_Formada)
+print("Hora Formada:", Hora_formada)
