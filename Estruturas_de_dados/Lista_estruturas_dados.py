@@ -53,58 +53,55 @@ do menu, o programa deve solicitar que o usuário digite o nome do
 produto\item para que a função correta seja chamada e a alteração da lista
 de compras possa ser feita. Implemente uma forma de encerrar o programa
 através da interação do usuário'''
-listaDeItem = list()
+
+
+def incluir_item(listaDeCompras):
+    item = input("Digite o item a ser incluído:")
+    listaDeCompras.append(item)
+    print(f"Item'{item}' incluído com sucesso")
+
+def remover_item(listaDeCompras):
+    item = input("Insira o item a ser removido: ")
+    if item in listaDeCompras:
+        listaDeCompras.remove(item)
+        print(f"Item '{item}' removido da lista")
+    else:
+        print(f"Item '{item}' não encontrado na lista")
+
+def atualizar_item(listaDeCompras):
+    item_antigo = input("Insira o item que deseja trocar")
+    if item_antigo in listaDeCompras:
+        novo_item = input("Insira o novo item ")
+        index = listaDeCompras.index(item_antigo)
+        listaDeCompras[index] = novo_item
+        print(f"Item '{item_antigo}' alterado para '{novo_item}'")
+    else:
+        print("Item não econtrado na lista")
+
 def menu():
     while True:
-        print(f"{"MENU":^{35}}") #o termo ":^{35}" centraliza a palavra menu 35 pixels em relação à borda
-        print("-="*20)
-        print("""
-        1 = Adicione um item 
-        2 = Remova um item
-        3 = Resumo
-        para sair digite: SAIR
-        """)
-        print("-="*20)
-        opcao = input("Digite a sua opção:" ).upper().strip()
-        if (opcao == "SAIR"):
+        print("\nMenu de opções:")
+        print("1. Incluir um novo item")
+        print("2. Remover um item")
+        print("3. Atualizar um item existente")
+        print("4. Exibir lista de compras")
+        print("5. Sair")
+        opcao = input("Escolha uma opção: ")
+
+        if opcao == "1":
+            incluir_item(listaDeCompras)
+        elif opcao == "2":
+            remover_item(listaDeCompras)
+        elif opcao == "3":
+            atualizar_item(listaDeCompras)
+        elif opcao == "4":
+            print("\nLista de Compras:")
+            exibirListas(listaDeCompras)
+        elif opcao == "5":
+            print("Encerrando o programa. Até mais!")
             break
         else:
-            if (opcao == "1"):
-                itemAdicionar = input("Digite o item a ser adicionado: ")
-                adicionar_item(itemAdicionar)
-            elif (opcao == "2"):
-                if (len(listaDeItem) == 0):
-                    print("Não há nenhum item para ser removido!")
-                else:
-                    itemRemover = input("Digit o item para ser removido: ")
-                    remover_item(itemRemover)
-            elif (opcao == "3"):
-                if (len(listaDeItem) == 0):
-                    print("Não há nenhum item para ser exibido!")
-                else:
-                    resumo_dos_item(listaDeItem)
-            else:
-                print("Digite novamente, opção não encontrada")
-def adicionar_item(item):
-    listaDeItem.append(item)
-    print("Item adicionado!")
-    print("-="*20)
-
-def remover_item(item):
-    if item in listaDeItem:
-        listaDeItem.remove(item)
-        print("Item removido!")
-        print("-="*20)
-    else:
-        print("O elemento não foi encontrado dentro da lista de compras.")
-
-def resumo_dos_item(item):
-    if (len(item) == 0):
-        print("Não há nenhum item para ser exibido!")
-    else:
-        for idx, i in enumerate(item, start=1): #enumerate retorna dois valores: primeiro o índice, e depois o item
-            print(f"Item {idx}: {i}")
-menu()
+            print("Opção inválida. Tente novamente.")
 
 '''6. Crie uma estrutura de dados que armazene o nome das linguagens de
 programação: C, C++, JavaScript, Java, Lua e Python. Implemente um
