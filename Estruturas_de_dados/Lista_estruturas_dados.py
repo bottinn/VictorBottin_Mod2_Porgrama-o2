@@ -1,3 +1,5 @@
+from custom_utils import utils
+
 '''1. Crie 03 variáveis do tipo tupla que contenham: os dias da semana, os meses
 do ano, as estações do ano. Crie uma função, que tenha 1 parâmetro, que
 imprima na tela os valores definidos em cada uma das tuplas.'''
@@ -5,11 +7,8 @@ diaTupla = ("domingo","segunda", "terça","quarta", "quinta", "sexta", "sábado"
 mesesTupla = ("Janeiro","Fevereiro", "Março", "Abril","maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro")
 estacoesTupla = ("verão","outono","inverno","primavera")
 listaDasTuplas = [diaTupla, mesesTupla, estacoesTupla]
-def imprimir(listaTuplas):
-    for item in listaTuplas:
-        print(item)
-    print()
-imprimir(listaDasTuplas)
+
+utils.imprimir(listaDasTuplas)
 
 '''2. Crie 03 variáveis do tipo lista que contenham: os dias da semana, os meses
 do ano, as estações do ano. Crie uma função, que tenha 1 parâmetro, que
@@ -18,21 +17,13 @@ diaLista = ["domingo","segunda", "terça","quarta", "quinta", "sexta", "sábado"
 mesesLista = ["Janeiro","Fevereiro", "Março", "Abril","maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"]
 estacoesLista =["verão","outono","inverno","primavera"]
 tuplaDasListas = (diaLista, mesesLista, estacoesLista)
-def imprimir(lista):
-    for item in lista:
-        print(item)
-imprimir(tuplaDasListas)
+
+utils.ExibirListaComChaves(tuplaDasListas)
 
 '''3. Exiba o tamanho e os elementos: primeiro, terceiro e último das estruturas de
 dados criadas e inicializadas nas questões 1 e 2.'''
-def exibirListas(listaDasTuplas): #lista das tuplas contem 3 tuplas com diferentes dados
-    for i in listaDasTuplas:
-        print(f"Tamanho de {i}: {len(i)}")
-        print(f"Primeiro elemento: {i[0]}")
-        print(f"Terceiro elemento: {i[2]}")
-        print(f"Último elemento: {i[-1]}")
-        print("=-"*30)
-exibirListas(listaDasTuplas)
+
+utils.exibirListas(listaDasTuplas)
 
 '''4. Crie uma lista de compras de supermercado com 15 itens. Através de um
 laço de repetição, exiba na tela, cada um dos itens dessa lista de compras.
@@ -54,30 +45,6 @@ produto\item para que a função correta seja chamada e a alteração da lista
 de compras possa ser feita. Implemente uma forma de encerrar o programa
 através da interação do usuário'''
 
-
-def incluir_item(listaDeCompras):
-    item = input("Digite o item a ser incluído:")
-    listaDeCompras.append(item)
-    print(f"Item'{item}' incluído com sucesso")
-
-def remover_item(listaDeCompras):
-    item = input("Insira o item a ser removido: ")
-    if item in listaDeCompras:
-        listaDeCompras.remove(item)
-        print(f"Item '{item}' removido da lista")
-    else:
-        print(f"Item '{item}' não encontrado na lista")
-
-def atualizar_item(listaDeCompras):
-    item_antigo = input("Insira o item que deseja trocar")
-    if item_antigo in listaDeCompras:
-        novo_item = input("Insira o novo item ")
-        index = listaDeCompras.index(item_antigo)
-        listaDeCompras[index] = novo_item
-        print(f"Item '{item_antigo}' alterado para '{novo_item}'")
-    else:
-        print("Item não econtrado na lista")
-
 def menu():
     while True:
         print("\nMenu de opções:")
@@ -89,19 +56,20 @@ def menu():
         opcao = input("Escolha uma opção: ")
 
         if opcao == "1":
-            incluir_item(listaDeCompras)
+            utils.incluir_item(listaDeCompras)
         elif opcao == "2":
-            remover_item(listaDeCompras)
+            utils.remover_item(listaDeCompras)
         elif opcao == "3":
-            atualizar_item(listaDeCompras)
+            utils.atualizar_item(listaDeCompras)
         elif opcao == "4":
             print("\nLista de Compras:")
-            exibirListas(listaDeCompras)
+            utils.exibirListas(listaDeCompras)
         elif opcao == "5":
             print("Encerrando o programa. Até mais!")
             break
         else:
             print("Opção inválida. Tente novamente.")
+
 
 '''6. Crie uma estrutura de dados que armazene o nome das linguagens de
 programação: C, C++, JavaScript, Java, Lua e Python. Implemente um
@@ -134,23 +102,4 @@ nome dos profissionais, procurar na lista de profissionais o nome informado,
 exibir na tela mensagem de que a consulta foi marcada com sucesso. Em
 caso de falha, exibir mensagem na tela informando o usuário do ocorrido.'''
 nomeMedicos = ("Dr. Carlos Henrique", "Dr. Pedro Gnoatto", "Dr. Branco Preto")
-def principal(nomeMedicos):
-    while True:
-        exibirMedicos(nomeMedicos)
-        tentativaMedico = input("")
-        if (tentativaMedico.isdigit()):
-            print("O nome deve conter letras.")
-        elif (tentativaMedico in nomeMedicos):
-            print(f"O médico {tentativaMedico} foi encontrado com sucesso na tupla mãe! Consulta marcada.")
-            break
-        else:
-            print("Digite um nome válido.")
-
-def exibirMedicos(nomes):
-    print(f'''{"-="*30}
-          {"LISTA DOS MÉDICOS":^{15}}
-{"-="*30}
-Deseja marcar uma consulta? Os médicos disponíveis são:
-{nomes}
-Por favor, insira o nome do médico que deseja ver: ''')
-principal(nomeMedicos)
+utils.principal(nomeMedicos)
