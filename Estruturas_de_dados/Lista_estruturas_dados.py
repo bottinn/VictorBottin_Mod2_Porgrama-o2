@@ -1,3 +1,8 @@
+import sys
+sys.path.append('.')
+sys.path.append('. ./custom_utils/utils')
+
+
 from custom_utils import utils
 
 '''1. Crie 03 variáveis do tipo tupla que contenham: os dias da semana, os meses
@@ -8,7 +13,7 @@ mesesTupla = ("Janeiro","Fevereiro", "Março", "Abril","maio","Junho","Julho","A
 estacoesTupla = ("verão","outono","inverno","primavera")
 listaDasTuplas = [diaTupla, mesesTupla, estacoesTupla]
 
-utils.imprimir(listaDasTuplas)
+utils.imprimirtuplas(listaDasTuplas)
 
 '''2. Crie 03 variáveis do tipo lista que contenham: os dias da semana, os meses
 do ano, as estações do ano. Crie uma função, que tenha 1 parâmetro, que
