@@ -1,8 +1,6 @@
 import sys
 sys.path.append('.')
 sys.path.append('. ./custom_utils/utils')
-
-
 from custom_utils import utils
 
 '''1. Crie 03 variáveis do tipo tupla que contenham: os dias da semana, os meses
@@ -108,3 +106,37 @@ exibir na tela mensagem de que a consulta foi marcada com sucesso. Em
 caso de falha, exibir mensagem na tela informando o usuário do ocorrido.'''
 nomeMedicos = ("Dr. Carlos Henrique", "Dr. Pedro Gnoatto", "Dr. Branco Preto")
 utils.principal(nomeMedicos)
+
+'''8. Crie um dicionário , baseado nas informações usadas p/criar a lista
+de compras da questão 4 , de forma que seja possível definiro preço de 
+cada produto.
+Dicionário vazio
+dict_vazio = {}'''
+
+# Dicionário com dados iniciais
+dict_preenchido = {'nome': 'Carlos', 'idade': 30}
+
+nome = dict_preenchido['nome']
+print(nome)  # Saída: Carlos
+
+
+
+'''9. Baseado no dicionário criado na questão 8 , crie um programa que solicite ao 
+usuário que informe o nome de um produto. Se o produto informado pelo usuário
+estiver na lista de compras do tipo dicionário,exiba a mensagem na tela:"O item
+(nome do produto) faz a lista de compras do supermercado".Senão , exiba a mensagem:
+O item (nome do produto) NÃO faz da lista de compras do supermercado ".'''
+
+
+
+
+'''10. Crie um dicionário que armazene um cadastro para uma loja . Esse cadastro deve 
+conter informações como: nome, idade , sexo , estado civil , nacionalidade , 
+faixa de renda , etc. Exiba na tela tais informações.'''
+
+
+
+
+'''11. Crie um programa que recebe dados de um aluno como : nome e notas. Cadastre 03 
+trimestres de informações. Retome uma nova estrutura de dados que armazene o nome
+e a média do aluno. Imprima , na tela , as informações dessa nova estrutura de dados.'''
