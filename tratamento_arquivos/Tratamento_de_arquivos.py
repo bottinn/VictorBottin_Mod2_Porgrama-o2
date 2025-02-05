@@ -1,0 +1,1 @@
+open("C:\Users\ADM\Documents\GitHub\VictorBottin_Mod2_Porgrama-o2\Victor_Guilherme_Bottin_prog2_mod2_recuperação.py", "r")
