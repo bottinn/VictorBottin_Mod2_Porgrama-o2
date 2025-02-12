@@ -1,6 +1,6 @@
 import os
 
-ARQUIVO_EVENTO = "tratamento_arquivos/evento.txt"
+ARQUIVO_EVENTO = "evento.txt"
 ARQUIVO_ALUNO =  "aluno.txt"
 ARQUIVO_INSCRITOS = "inscricoes.txt"
 
@@ -65,7 +65,7 @@ def cadastrar_evento_arquivo():
             ,   capacidade# parametro que representa as vagas restantes
             ,   "\n"]
             
-            #grava as informações no arquivo evento.txt
+            #grava as informações no arquivo evento.txt 
             informacoes = "".join(linha)
             #fevento.write(repr(informacoes))
             fevento.write(f"{informacoes}")
